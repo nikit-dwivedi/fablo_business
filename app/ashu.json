@@ -1,0 +1,55 @@
+{
+  "api_key": "c3e46bc0bbdc2d6cdf22f4dae426581259435bd522fd98b30f5baf939b9ce2ba",
+  "fleet_id": 19750,
+  "timezone": -330,
+  "has_pickup": 1,
+  "has_delivery": 1,
+  "layout_type": 0,
+  "geofence": 0,
+  "team_id": "",
+  "auto_assignment": 0,
+  "tags": "",
+  "pickups": [
+    {
+      "address": "Chandigarh International Airport, Sahibzada Ajit Singh Nagar, Punjab, India",
+      "latitude": 30.7333148,
+      "longitude": 76.7794179,
+      "time": "2017-08-14 17:24:00",
+      "phone": "+911234567890",
+      "job_description": "Job description goes here",
+      "template_name": "Template_1",
+      "template_data": [
+        { "label": "Price", "data": "100" },
+        { "label": "Quantity", "data": "100" }
+      ],
+      "ref_images": [
+        "http://tookanapp.com/wp-content/uploads/2015/11/logo_dark.png"
+      ],
+      "name": "Saurabh",
+      "email": "saurabh@saurabh.com",
+      "order_id": "12234556"
+    }
+  ],
+  "deliveries": [
+    {
+      "address": "Chandigarh Railway Station, Daria, Chandigarh, India",
+      "latitude": 30.7022191,
+      "longitude": 76.82247009999992,
+      "time": "2017-08-14 17:30:00",
+      "phone": "+913242342342",
+      "job_description": "Job description goes here",
+      "template_name": "Template_1",
+      "template_data": [
+        { "label": "Price", "data": "100" },
+        { "label": "Quantity", "data": "100" }
+      ],
+      "ref_images": [
+        "http://tookanapp.com/wp-content/uploads/2015/11/logo_dark.png"
+      ],
+      "name": "Saurabh",
+      "email": "saurabh@saurabh.com",
+      "order_id": "123456"
+    }
+  ]
+}
+

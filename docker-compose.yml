@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  lb:
+    image: haproxy
+    ports:
+      - "9050:8080"
+    restart: always
+    networks:
+      marketplace:
+        ipv4_address: 172.40.0.2 # Assign a static IP address to the lb service
+    volumes:
+      - ./haproxy:/usr/local/etc/haproxy
+
+  fabloBusiness1:
+    image: fabloBusiness
+    environment:
+      - APPID=1111
+    restart: always
+    networks:
+      marketplace:
+        ipv4_address: 172.40.0.3 # Assign a static IP address to fabloBusiness1
+
+  fabloBusiness2:
+    image: fabloBusiness
+    environment:
+      - APPID=2222
+    restart: always
+    networks:
+      marketplace:
+        ipv4_address: 172.40.0.4 # Assign a static IP address to fabloBusiness2
+
+  fabloBusiness3:
+    image: fabloBusiness
+    environment:
+      - APPID=3333
+    restart: always
+    networks:
+      marketplace:
+        ipv4_address: 172.40.0.5 # Assign a static IP address to fabloBusiness3
+
+  fabloBusiness4:
+    image: fabloBusiness
+    environment:
+      - APPID=4444
+    restart: always
+    networks:
+      marketplace:
+        ipv4_address: 172.40.0.6 # Assign a static IP address to fabloBusiness4
+
+networks:
+  marketplace:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.40.0.0/16 # Define a subnet for your custom network named "marketplace"
