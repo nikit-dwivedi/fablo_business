@@ -7,7 +7,7 @@
 
 
 # Pull the latest code from the Git repository
-git pull "https://nikit-dwivedi:git@github.com/nikit-dwivedi/fablo_business.git" main
+git pull "https://nikit-dwivedi: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@github.com/nikit-dwivedi/fablo_business.git" main
 
 
 # Build the Docker image from the Dockerfile in the current directory
